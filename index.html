@@ -1,40 +1,74 @@
 <!DOCTYPE HTML>
 <html lang="en-US">
-<head>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
-	
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/jquery.placeholder.js"></script>
-	<script type="text/javascript" src="js/example.js"></script>
-	
-	<title>jQuery.placeholder Plugin</title>
-</head>
-<body>
-	<form action="">
-		<table>
-			<thead>
-				<tr>
-					<td>Register form</td>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td><label for="firstname" class="placeholder">Firstname</label><input type="text" name="firstname" id="" /></td>
-				</tr>
-				<tr>
-					<td><label for="lastname" class="placeholder">Lastname</label><input type="text" name="lastname" id="" /></td>
-				</tr>
-				<tr>
-					<td><label for="email" class="placeholder">Email</label><input type="text" name="email" id="" /></td>
-				</tr>
-			</tbody>
-			<tfoot>
-				<tr>
-					<td><input type="submit" value="Register" /></td>
-				</tr>
-			</tfoot>
-		</table>
-	</form>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery.placeholder.js"></script>
+        <script type="text/javascript" src="js/example.js"></script>
+
+        <title>jQuery.placeholder Plugin</title>
+    </head>
+    <body>
+        <label for="firstname-plugin" class="placeholder">Firstname</label>
+        <div id="plugin">
+            <h1>Label based</h1>
+            <form action="">
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Register form</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="text" name="firstname-plugin" id="" /></td>
+                        </tr>
+                        <tr>
+                            <td><label for="lastname-plugin" class="placeholder">Lastname</label><input type="text" name="lastname-plugin" id="" /></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email-plugin" class="placeholder">Email</label><input type="text" name="email-plugin" id="" /></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td><input type="submit" value="Register" /></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </form>
+        </div>
+
+        <div id="html5">
+            <h1>HTML5 Placeholder</h1>
+            <form action="">
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Register form</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="text" placeholder="Firstname" name="firstname" id="" /></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" placeholder="Lastname" name="lastname" id="" /></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" placeholder="Email" name="email" id="" /></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td><input type="submit" value="Register" /></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </form>
+        </div>
+        <br class="clearer"/>
+    </body>
 </html>

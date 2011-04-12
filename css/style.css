@@ -1,3 +1,22 @@
 label.placeholder {
-	display: none;
+}
+
+input {
+    padding: 5px;
+}
+
+
+#plugin {
+    float:left;
+    display: inline-block;
+    margin: 0 250px 0 0;
+}
+
+#html5 {
+    width: 50%;
+    display: inline-block;
+}
+
+.clearer {
+    clear: both;
 }
